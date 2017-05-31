@@ -4,6 +4,8 @@ package org.team2399.robot;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import org.team2399.command.Command;
 import org.team2399.command.Scheduler;
+import org.team2399.robot.subsystems.DriveTrain;
+
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -18,6 +20,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Robot extends IterativeRobot {
 
 	private OI oi;
+	
+	private DriveTrain driveTrain;
+	
+	private Scheduler sch;
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -25,7 +31,12 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void robotInit() {
+		sch = Scheduler.getInstance();
+		driveTrain = new DriveTrain();
+		
 		oi = new OI();
+		
+		sch.registerSubsystem(driveTrain, oi.defaultDrive(driveTrain));
 	}
 
 	/**
