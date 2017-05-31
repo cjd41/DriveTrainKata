@@ -1,0 +1,3 @@
+[submodule "commandExtension"]
+	path = commandExtension
+	url = git@github.com:cjd41/commandExtension.git

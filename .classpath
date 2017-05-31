@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="commandExtension"/>
 	<classpathentry kind="var" path="WPILIB_DIR/java/current/lib/wpilib.jar" sourcepath="/WPILIB_DIR/java/current/lib/wpilib-sources.jar"/>
 	<classpathentry kind="var" path="WPILIB_DIR/java/current/lib/networktables.jar" sourcepath="/WPILIB_DIR/java/current/lib/networktables-sources.jar"/>
 	<classpathentry kind="var" path="WPILIB_DIR/java/current/lib/opencv.jar" sourcepath="/WPILIB_DIR/java/current/lib/opencv-sources.jar"/>
