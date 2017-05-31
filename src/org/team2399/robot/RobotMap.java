@@ -15,4 +15,9 @@ public class RobotMap {
 		public static final int leftMotorFwd = -1;
 		public static final int rightMotorFwd = 1;
 	}
+	
+	public static class OIConstants {
+		public static final int stick0YFwd = -1;
+		public static final int stick1YFwd = -1;
+	}
 }
